@@ -115,7 +115,7 @@ export function RegisterForm({
         <Button type="submit">Submit</Button>
         <div className="flex space-x-2">
             <p>I have an account</p>
-            <Link to="/login" >Login</Link>
+            <a href="/login" >Login</a>
         </div>
       </form>
     </Form>
