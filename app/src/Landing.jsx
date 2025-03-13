@@ -67,7 +67,7 @@ export function Landing() {
               </h1>
               <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">All Your Life in One Place represents a practical and simplified solution that centralizes all the important aspects of your daily life. Whether it's your tasks, projects, memories, or relationships, this concept allows you to manage all essential elements of your life from a single platform.</p>
               <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-                <a className="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700" href="/register">Get Started</a>
+                <a href="/register" className="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Get Started</a>
               </div>
             </div>
             <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
