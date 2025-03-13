@@ -1,5 +1,3 @@
-import { Outlet, Link } from "react-router-dom";
-
 export function Landing() {
     return (
         <>
