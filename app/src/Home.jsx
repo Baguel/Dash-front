@@ -100,7 +100,7 @@ function Home() {
                           <div onClick={() => addtodash(item._id)} className="group" key={item._id}>
                             <div className="bg-white rounded-xl shadow-elegant p-6 flex items-center justify-center transition-all duration-300 group-hover:shadow-hover group-hover:-translate-y-1 cursor-pointer">
                               <div className="w-18 h-18 rounded-md bg-center bg-cover">
-                                <img className='rounded-md' src={"http://localhost:3000/" + item.picture} alt="fokfoskfosko" />
+                                <img className='rounded-md' src={"https://dash-back-2n4t.onrender.com/" + item.picture} alt="fokfoskfosko" />
                               </div>
                             </div>
                             <p className="mt-3 text-center text-sm font-medium text-gray-700">{item.name}</p>
