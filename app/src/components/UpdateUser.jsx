@@ -31,7 +31,7 @@ export function UserUpdate() {
   let token = localStorage.getItem('token');
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/user/user`, {
+    axios.get(`https://dash-back-2n4t.onrender.com/user/user`, {
         headers: {
             'Authorization': `Bearer ${token}`
         }
@@ -48,7 +48,7 @@ export function UserUpdate() {
 
 function updateUser(e) {
   e.preventDefault();
-  axios.put(`http://localhost:3000/user/update`,{
+  axios.put(`https://dash-back-2n4t.onrender.com/user/update`,{
     username,
     email,
     password,
@@ -67,7 +67,7 @@ function updateUser(e) {
 
 function updateUserPass(e) {
   e.preventDefault();
-  axios.put(`http://localhost:3000/user/update/pass`,{
+  axios.put(`https://dash-back-2n4t.onrender.com/user/update/pass`,{
     old: old,
     newpass: newpass,
     confirmpass: confirmpass,

@@ -9,7 +9,7 @@ export function Dashboard() {
     const [user, setUser] = useState([]);
 
     function getAllusers() {
-        axios.get('http://localhost:3000/admin/getUser', {
+        axios.get('https://dash-back-2n4t.onrender.com/admin/getUser', {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
@@ -24,7 +24,7 @@ export function Dashboard() {
     }
 
     function deleteUser(id) {
-        axios.delete(`http://localhost:3000/admin/delete/${id}`, {
+        axios.delete(`https://dash-back-2n4t.onrender.com/admin/delete/${id}`, {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
@@ -39,7 +39,7 @@ export function Dashboard() {
     }
     
     useEffect(() => {
-        axios.get('http://localhost:3000/user/user', {
+        axios.get('https://dash-back-2n4t.onrender.com/user/user', {
         headers: {
             'Authorization': `Bearer ${token}`
         }

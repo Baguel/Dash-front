@@ -53,7 +53,7 @@ export function RegisterForm({
     const username = values.username;
     const email = values.email;
     const password = values.password;
-    axios.post("http://localhost:3000/auth/register", {
+    axios.post("https://dash-back-2n4t.onrender.com/auth/register", {
       username,
       email,
       password

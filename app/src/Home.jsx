@@ -25,7 +25,7 @@ function Home() {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    axios.get('http://localhost:3000/user/user', {
+    axios.get('https://dash-back-2n4t.onrender.com/user/user', {
       headers: {
         'Authorization': `Bearer ${token}`
       }
@@ -39,7 +39,7 @@ function Home() {
   }, [])
 
   function getServices() {
-    axios.get('http://localhost:3000/user/service', {
+    axios.get('https://dash-back-2n4t.onrender.com/user/service', {
       headers: {
         'Authorization': `Bearer ${token}`
       }
@@ -66,7 +66,7 @@ function Home() {
   }
 
   const addtodash = (id) => {
-    axios.post(`http://localhost:3000/user/addService/${id}`, {}, {
+    axios.post(`https://dash-back-2n4t.onrender.com/user/addService/${id}`, {}, {
       headers: {
         'Authorization': `Bearer ${token}`
       }

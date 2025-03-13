@@ -35,7 +35,7 @@ export function Deux({id}){
     }, [timer]);
 
     function alert(id) {
-        axios.delete(`http://localhost:3000/user/deleteService/${id}`, {
+        axios.delete(`https://dash-back-2n4t.onrender.com/user/deleteService/${id}`, {
             headers: {
               'Authorization': `Bearer ${token}`
             }

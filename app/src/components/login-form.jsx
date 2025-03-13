@@ -20,7 +20,7 @@ export function LoginForm({
 
   const submit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3000/auth/login", {
+    axios.post("https://dash-back-2n4t.onrender.com/auth/login", {
       username,
       password
     }).then((response) => {

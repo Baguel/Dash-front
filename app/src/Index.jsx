@@ -37,7 +37,7 @@ export default function Index() {
 
 
   function getUserService() {
-    axios.get('http://localhost:3000/user/myService', {
+    axios.get('https://dash-back-2n4t.onrender.com/user/myService', {
       headers: {
         'Authorization': `Bearer ${token}`
       }
@@ -57,7 +57,7 @@ export default function Index() {
 
   useEffect(() => {
     if (token) {
-      axios.get('http://localhost:3000/user/user', {
+      axios.get('https://dash-back-2n4t.onrender.com/user/user', {
         headers: {
           'Authorization': `Bearer ${token}`
         }

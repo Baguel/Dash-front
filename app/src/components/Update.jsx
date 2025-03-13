@@ -14,7 +14,7 @@ export function Update() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/admin/user/${params.id}`, {
+        axios.get(`https://dash-back-2n4t.onrender.com/admin/user/${params.id}`, {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
@@ -32,7 +32,7 @@ export function Update() {
 
     function updateUser(event) {
         event.preventDefault();
-        axios.put(`http://localhost:3000/admin/update/${params.id}`, {
+        axios.put(`https://dash-back-2n4t.onrender.com/admin/update/${params.id}`, {
             username,
             email,
             isAdmin,
