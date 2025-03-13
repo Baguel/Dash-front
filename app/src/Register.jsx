@@ -1,7 +1,6 @@
 "use client"
 import { GalleryVerticalEnd } from "lucide-react";
 import { RegisterForm } from "@/components/register-form"
-import { Outlet, Link } from "react-router-dom";
 
 export function Register() {
     return (
@@ -26,10 +25,6 @@ export function Register() {
                     <div className="flex flex-1 items-center justify-center">
                     <div className="w-full max-w-xs">
                         <RegisterForm />
-                    </div>
-                    <div className="flex space-x-2">
-                        <p>I have an account</p>
-                        <Link href="/login" >Login</Link>
                     </div>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 "use client"
 import { GalleryVerticalEnd } from "lucide-react";
 import { LoginForm } from "@/components/login-form"
+import { Outlet, Link } from "react-router-dom";
 
 export default function Login() {
 

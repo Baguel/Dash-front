@@ -113,6 +113,10 @@ export function RegisterForm({
         />
         <p className="text-red-500 font-semibold">{error}</p>
         <Button type="submit">Submit</Button>
+        <div className="flex space-x-2">
+            <p>I have an account</p>
+            <Link to="/login" >Login</Link>
+        </div>
       </form>
     </Form>
   )
