@@ -15,7 +15,6 @@ import {
 } from "@/components/ui/sidebar"
 
 import { Chucks } from '@/components/chuckNorris';
-import { New } from "./components/News";
 import { WeatherLocation } from "./components/weatherdefault";
 import { WeatherWidget } from "./components/weather";
 import {  Widget } from "./components/citation";
