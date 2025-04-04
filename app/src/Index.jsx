@@ -114,7 +114,7 @@ export default function Index() {
               {item.service_id.name  == "crypto" && (
                 <CryptoPrices id={item._id} />
               )}
-              {item.service_id.name  == "crypto" && (
+              {item.service_id.name  == "dog" && (
                 <Dog id={item._id} />
               )}
               {item.service_id.name  == "Film" && (
