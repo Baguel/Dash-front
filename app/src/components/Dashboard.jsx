@@ -16,6 +16,7 @@ export function Dashboard() {
             })
             .then((res) => {
                 setUser(res.data.message)
+                console.log(res.data.message)
             })
             .catch((err) => {
                 console.log(err);
