@@ -106,7 +106,7 @@ export function Dashboard() {
                 </span>
             </td>
             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                {item.username}
+                {item.isAdmin == 1 ? 'Admin' : 'Not Admin'}
             </td>
             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                 {item.email}
