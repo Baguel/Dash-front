@@ -24,7 +24,7 @@ const formSchema = z.object({
   username: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
-  email: z.string().email( {
+  email: z.string().regex(/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/).email( {
     message: "This is not a valid email.",
   }),
   password: z.string().min(8, {
@@ -59,12 +59,10 @@ export function RegisterForm({
       password
     }).then((response) => {
       if (response.status == 200) {
-        console.log(response)
-        // localStorage.setItem("token", response.data.token)
+        localStorage.setItem("token", response.data.token)
         nagivate("/login");
       }
     }).catch(error => {
-      console.log(error)
       if (error.status == 401) {
         setError(error.response.data.message);
       }
