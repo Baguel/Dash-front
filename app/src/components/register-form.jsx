@@ -24,7 +24,7 @@ const formSchema = z.object({
   username: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
-  email: z.string().regex(/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/).email( {
+  email: z.string().email( {
     message: "This is not a valid email.",
   }),
   password: z.string().min(8, {
