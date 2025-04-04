@@ -28,7 +28,7 @@ import { Dog } from "./components/DogApi";
 import { Film } from "./components/filmAPi";
 import { Undraw } from "./components/Undraw";
 import { Postit } from "./components/Postit";
-import { Date } from "./components/personal";
+import { NewsDateComponent } from "./components/personal";
 
 export default function Index() {
   const navigate = useNavigate();
@@ -127,9 +127,11 @@ export default function Index() {
               {item.service_id.name  == "Postit" && (
                 <Postit id={item._id} />
               )}
+              {item.service_id.name  == "Date" && (
+                <NewsDateComponent id={item._id} />
+              )}
             </div>
           ))}
-            <Date />
             </div>
         </div>
         </SidebarInset>
