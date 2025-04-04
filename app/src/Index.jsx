@@ -28,6 +28,7 @@ import { Dog } from "./components/DogApi";
 import { Film } from "./components/filmAPi";
 import { Undraw } from "./components/Undraw";
 import { Postit } from "./components/Postit";
+import { Date } from "./components/personal";
 
 export default function Index() {
   const navigate = useNavigate();
@@ -128,6 +129,7 @@ export default function Index() {
               )}
             </div>
           ))}
+            <Date />
             </div>
         </div>
         </SidebarInset>
